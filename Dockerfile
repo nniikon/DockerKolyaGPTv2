@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-ARG GTEST_SHA=03597a01ee50ed33e9dfd640b249b4be3799d395
+ARG GTEST_SHA=6910c9d9165801d8827d628cb72eb7ea9dd538c5
 
 RUN apt update && \
     apt install -y \
