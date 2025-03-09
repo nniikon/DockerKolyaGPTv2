@@ -27,5 +27,5 @@ jobs:
           file: ./Dockerfile
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/your-image-name:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/your-image-name:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/kolyagpt:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/kolyagpt:${{ github.sha }}
