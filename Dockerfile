@@ -10,10 +10,11 @@ RUN apt update && \
         cmake && \
     rm -rf /var/lib/apt/lists/*
 
-COPY ./ ./
-
+COPY ./*.sh ./
 RUN chmod +x *.sh
 
 RUN ./build_googletest.sh "${GTEST_SHA}"
+
+VOLUME ["/apt"]
 
 WORKDIR /apt
